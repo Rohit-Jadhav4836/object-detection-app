@@ -1,68 +1,71 @@
 # Python
-venv/
 __pycache__/
 *.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+*.pyo
 
-# Virtual Environment
+# Virtual environments
+venv/
+.venv/
 env/
 ENV/
-env.bak/
-venv.bak/
 
-# IDEs
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
 .vscode/
 .idea/
-*.swp
-*.swo
-*~
+*.code-workspace
 
-# Streamlit
-.streamlit/
+# Jupyter
+.ipynb_checkpoints/
 
-# Model weights and cache
-*.pt
-*.pth
-*.weights
-yolov*.pt
-runs/
-weights/
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+.streamlit/cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
 
 # Logs
 *.log
-logs/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-
-# Jupyter Notebook
-.ipynb_checkpoints
 
 # Temporary files
 *.tmp
 *.temp
-tmp/
+*.bak
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+
+# Generated output
+outputs/
+output/
+results/
 temp/
+tmp/
+
+# Uploaded / downloaded files
+uploads/
+downloads/
+
+# Python local caches
+.mypy_cache/
+.ruff_cache/
+
+# YOLO model weights
+# These are ignored because large .pt files should not be
+# committed unless the app downloads them automatically.
+*.pt
