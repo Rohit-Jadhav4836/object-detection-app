@@ -1,0 +1,68 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Streamlit
+.streamlit/
+
+# Model weights and cache
+*.pt
+*.pth
+*.weights
+yolov*.pt
+runs/
+weights/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
